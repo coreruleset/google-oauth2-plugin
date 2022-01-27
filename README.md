@@ -47,7 +47,7 @@ After installation, plugin should be tested, for example, using these two comman
 
 Using default CRS configuration, first command should complete successfully
 without anything logged into logs and second command should end with status 403
-with the following message in the log:
+with the following message in the log:  
 `ModSecurity: Warning. Matched phrase ".profile" at ARGS:scope. [file "/path/rules/REQUEST-930-APPLICATION-ATTACK-LFI.conf"] [line "97"] [id "930120"] [msg "OS File Access Attempt"] [data "Matched Data: .profile found within ARGS:scope: email profile https:/www.googleapis.com/auth/userinfo.profile https:/www.googleapis.com/auth/userinfo.email"] [severity "CRITICAL"] [ver "OWASP_CRS/3.3.2"] [tag "application-multi"] [tag "language-multi"] [tag "platform-multi"] [tag "attack-lfi"] [tag "paranoia-level/1"] [tag "OWASP_CRS"] [tag "capec/1000/255/153/126"] [tag "PCI/6.5.4"] [hostname "localhost"] [uri "/"] [unique_id "YfKalxtdAK3KYVNciYWEkgAAACs"]`
 
 ## License

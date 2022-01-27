@@ -42,8 +42,10 @@ after like above. Adjust the paths accordingly._
 ## Testing
 
 After installation, plugin should be tested, for example, using these two commands:  
-`curl "http://localhost/?state=test&code=test&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email"`
-`curl "http://localhost/?state=test&code=test&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email&inject=data"`
+```
+curl "http://localhost/?state=test&code=test&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email"
+curl "http://localhost/?state=test&code=test&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email&inject=data"
+```
 
 Using default CRS configuration, first command should complete successfully
 without anything logged into logs and second command should end with status 403

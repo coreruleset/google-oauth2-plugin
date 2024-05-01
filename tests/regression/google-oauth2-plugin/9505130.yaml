@@ -19,7 +19,7 @@ tests:
             method: GET
             uri: /?state=test&code=test&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email
           output:
-            no_log_contains: id "930120"
+            no_log_contains: id "9505130"
   - test_title: 9505130-2
     desc: "Check that plugin is NOT passing invalid Google OAuth2 callback"
     stages:
@@ -34,4 +34,4 @@ tests:
             method: GET
             uri: /?state=test&code=test&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email&inject=data
           output:
-            log_contains: id "930120"
+            log_contains: id "9505130"

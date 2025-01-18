@@ -11,6 +11,18 @@ For full and up to date instructions for the different available plugin
 installation methods, refer to [How to Install a Plugin](https://coreruleset.org/docs/concepts/plugins/#how-to-install-a-plugin)
 in the official CRS documentation.
 
+## Configuration
+
+The settings for this plugin reside in `plugins/google-oauth2-config.conf`.
+
+### tx.google-oauth2-plugin_whitelisted_parameters
+
+Here you can whitelist additional GET parameters which you are sending
+using callback URL and are not standard to Google OAuth2. Use this syntax:
+/param1/ /param2/ /param3/
+
+Default value:
+
 ## Testing
 
 After installation, plugin should be tested, for example, using these two commands:  
@@ -26,7 +38,7 @@ with the following message in the log:
 
 ## License
 
-Copyright (c) 2022 OWASP CRS project. All rights reserved.
+Copyright (c) 2022-2025 OWASP CRS project. All rights reserved.
 
 The OWASP CRS and its official plugins are distributed
 under Apache Software License (ASL) version 2. Please see the enclosed LICENSE

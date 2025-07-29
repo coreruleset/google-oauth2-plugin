@@ -2,8 +2,7 @@
 meta:
   author: "azurit"
   description: "Google OAuth2 Plugin"
-  enabled: true
-  name: 9505130.yaml
+rule_id: 9505130
 tests:
   - test_id: 1
     desc: "Check that plugin is excluding rule 930120 for 'scope' parameter for valid Google OAuth2 callback"

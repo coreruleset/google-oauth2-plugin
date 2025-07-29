@@ -1,7 +1,11 @@
 ---
-on: [push, pull_request]          # yamllint disable-line rule:truthy
+on:          # yamllint disable-line rule:truthy
+  push:
+    branches: main
+  pull_request:
+    branches: main
 name: Integration tests
 
 jobs:
   integration-tests:
-    uses: coreruleset/crs-plugin-test-action/.github/workflows/integration.yaml@main
+    uses: coreruleset/crs-plugin-test-action/.github/workflows/integration.yaml@v2.0.0
